@@ -1,16 +1,15 @@
 # surveys
-A simple survey made with flask, CSS and HTML
 ![image of surveys home page with two available surveys displayed](static/surveys.png)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is a simple survey built with Flask, HTML and CSS.
-Home page displays available suveys which are two instances of Survey class imported from surveys.py.
-Clicking on a "Start Survey" button starts the survey with first question at index zero. 
-User is unable to skip questions, and any attempts redirect user back to the current questions they should be answering. 
-User's progress is stored in cookies with the help of flask session. This survey is not using any databases to store user progress. 
-When survey is complete survey name is added to cookies list of "completed_surveys" which is then checked for when user tried to take the survey again.
-If the survey has been completed user is redirected to a complete.html page telling user that they have already completed this survey. 
+**This is a simple survey built with Flask, HTML and CSS.**
+- Home page displays available suveys which are two instances of Survey class imported from surveys.py.
+- Clicking on a "Start Survey" button starts the survey with first question at index zero. 
+- User is unable to skip questions, and any attempts redirect user back to the current questions they should be answering. 
+- User's progress is stored in cookies with the help of flask session. This survey is not using any databases to store user progress. 
+- When survey is complete survey name is added to cookies list of "completed_surveys" which is then checked for when user tried to take the survey again.
+- If the survey has been completed user is redirected to a complete.html page telling user that they have already completed this survey. 
 
 
 ### surveys.py
