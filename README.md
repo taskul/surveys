@@ -41,8 +41,8 @@ DebugToolbarExtension is used for debugging.
 ```
 
 ### HTML pages
-- base.html *contains navbar, footer and error messages that can be extended to other pages using jinja templating*
-- complete.html *displays the survey has been completed message*
-- index.html *main page that displays available surveys*
-- questions.html *shows current question which id rendered dynamically based on user progress with current survey*
-- thanks.html *survey completion page that shows summary of user answers*
+- base.html - *contains navbar, footer and error messages that can be extended to other pages using jinja templating*
+- complete.html - *displays the survey has been completed message*
+- index.html - *main page that displays available surveys*
+- questions.html - *shows current question which id rendered dynamically based on user progress with current survey*
+- thanks.html - *survey completion page that shows summary of user answers*
