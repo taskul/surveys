@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Survey Questions {% endblock %}
+
+{% block content %}
+
+<div class="survey_card">
+    <form action="/record-answer" method="POST">
+        <h3>{{ question.question}}</h3>
+        {% for choice in question.choices %}
+        <label> {{choice}}
+            <input type="radio" name="answer" value="{{choice}}">
+        </label>
+        {% endfor %}
+        {% if question.allow_text %}
+        <br>
+        <label>Comment:</label>
+        <br>
+        <textarea name='comment' rows='2' cols='40'></textarea>
+        {% endif %}
+        <br>
+        <button class="accept-button">Continue</button>
+    </form>
+</div>
+{% endblock %}

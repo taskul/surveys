@@ -1,0 +1,87 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #F9F8EB;
+}
+
+.messages .error {
+    background-color: rgb(205, 89, 89);
+    color: white;
+    text-align: center;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.messages .success {
+    background-color: rgb(87, 185, 87);
+    color: white;
+    text-align: center;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #5C8D89;
+    padding: 20px;
+}
+
+.navbar a {
+    color: #F9F8EB;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.user-messages {
+    height: 30px;
+}
+
+h1 {
+    margin-left: 30px;
+    color: #5C8D89;
+}
+
+.survey_card {
+    background-color: #74B49B;
+    color: #F9F8EB;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 30px;
+}
+
+.accept-button {
+    background-color: rgb(95, 95, 251);
+    color: #F9F8EB;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #5C8D89;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #F9F8EB;
+    text-decoration: none;
+}
+
+.thanks {
+    color: #5C8D89;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.other_buttons {
+    background-color: #5C8D89;
+    ;
+    color: #F9F8EB;
+    text-align: center;
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Survey is complete {% endblock %}
+
+{% block content %}
+
+<h3 class="thanks">Thank you for taking the time to complete the survey</h3>
+<p> Your responses </p>
+<ul>
+{% for answer in user_responses %}
+    <li>Answer: {{answer['answer']}} </li>
+    {% if answer['comment'] %}
+        <p> Comment: {{answer['comment']}}</p>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<a href="/" class="other_buttons">Return Home</a>
+{% endblock %}

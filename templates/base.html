@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Survey Home Page {% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="/static/app.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/">Home</a>
+    </nav>
+    <div class="user-messages">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul class='messages'>
+            {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+
+</html>

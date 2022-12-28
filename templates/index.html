@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} Surveys {% endblock %}
+
+{% block content %}
+<h1>Available Surveys:</h1>
+
+{% for key_name, survey in surveys.items() %}
+<div class="survey_card">
+    <form action="/new_survey" method='POST'>
+        <h3>{{ survey.title }}</h3>
+        <p>{{ survey.instructions }}</p>
+        <input type='hidden' value="{{ key_name }}" name='title'>
+        <button class="accept-button">Start Survey</button>
+    </form>
+</div>
+{% endfor %}
+
+
+
+{% endblock %}
