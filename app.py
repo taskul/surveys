@@ -1,12 +1,13 @@
 from flask import Flask, render_template, redirect, flash, request, session
 import surveys
 from flask_debugtoolbar import DebugToolbarExtension
+import os
 
 app = Flask(__name__)
 
 # we need to turn app debug mode on. 
 app.debug = True
-app.config["SECRET_KEY"] = "hellodarknessmyoldfriend"
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 # works with render_templates so we could pass into html to debugger. 
 debug = DebugToolbarExtension(app)
